@@ -1,2 +1,2 @@
 # DesignPatterns
-Contains examples for all design patterns in Java
+Contains note and examples for all design patterns in Java
