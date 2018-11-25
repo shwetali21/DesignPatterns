@@ -1,5 +1,6 @@
 package com.java.designpattern.creational.singleton;
 
+/**In eager initialization, the instance of Singleton Class is created at the time of class loading.*/
 public class EagerInitializedSingleton {
 
 	private static final EagerInitializedSingleton INSTANCE = new EagerInitializedSingleton();

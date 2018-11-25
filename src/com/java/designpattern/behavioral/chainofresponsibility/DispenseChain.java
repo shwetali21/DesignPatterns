@@ -1,6 +1,6 @@
 package com.java.designpattern.behavioral.chainofresponsibility;
 
-/*The base interface should have a method to define the next processor in the chain and the method that will process the request. 
+/**The base interface - DispenseChain should have a method to define the next processor in the chain and the method that will process the request. 
  * Our ATM Dispense interface will look like below.
  */
 public interface DispenseChain {

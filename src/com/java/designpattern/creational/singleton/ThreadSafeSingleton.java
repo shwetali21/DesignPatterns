@@ -1,5 +1,8 @@
 package com.java.designpattern.creational.singleton;
 
+/**Thread-safe singleton class is to make the global access method synchronized,
+ * so that only one thread can execute this method at a time.
+ * */
 public class ThreadSafeSingleton {
 
 	private static ThreadSafeSingleton instance;
@@ -20,11 +23,11 @@ public class ThreadSafeSingleton {
 	/*To avoid this extra overhead every time, double checked locking principle is used. 
 	In this approach, the synchronized block is used inside the if-condition with an additional check 
 	to ensure that only one instance of singleton class is created*/
-	
+
 	public static ThreadSafeSingleton getInstanceUsingDoubleLocking() {
 		if(instance == null) {
 			synchronized (ThreadSafeSingleton.class) {
-				if(instance == null){
+				if(instance == null) {
 					instance = new ThreadSafeSingleton();
 				}
 			}

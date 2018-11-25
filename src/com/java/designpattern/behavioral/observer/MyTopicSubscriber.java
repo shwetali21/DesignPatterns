@@ -1,20 +1,21 @@
 package com.java.designpattern.behavioral.observer;
 
+/**Implementation of Observers that will watch over the subject*/
 public class MyTopicSubscriber implements Observer {
 
 	private String name;
 	private Subject topic;
 
-	public MyTopicSubscriber(String nme) {
-		this.name = nme;
+	public MyTopicSubscriber(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public void update() {
 		String msg = (String) topic.getUpdate(this);
-		if(msg == null) {
+		if(msg == null)
 			System.out.println(name + " :: No new message");
-		} else
+		else
 			System.out.println(name + " :: Consuming message::" + msg);
 	}
 

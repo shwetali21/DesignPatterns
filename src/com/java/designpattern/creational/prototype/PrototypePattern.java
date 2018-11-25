@@ -12,10 +12,10 @@ public class PrototypePattern {
 		//Use the clone method to get the Employee object
 		Employees newEmp1 = (Employees) emps.clone();
 		Employees newEmp2 = (Employees) emps.clone();
-		
+
 		List<String> list1 = newEmp1.getEmpList();
 		list1.add("John");
-		
+
 		List<String> list2 = newEmp2.getEmpList();
 		list2.remove("Pankaj");
 

@@ -1,6 +1,7 @@
 package com.java.designpattern.structural.composite;
 
 public class TestComposite {
+
 	public static void main(String[] args) {
 		Shape tri = new Triangle();
 		Shape tri1 = new Triangle();
@@ -12,7 +13,6 @@ public class TestComposite {
 		drawing.add(cir);
 
 		drawing.draw("Red");
-
 		drawing.clear();
 
 		drawing.add(tri);

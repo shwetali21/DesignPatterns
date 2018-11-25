@@ -3,7 +3,7 @@ package com.java.designpattern.behavioral.command;
 import java.util.ArrayList;
 import java.util.List;
 
-/**class Broker is created which acts as an invoker object. It can take and place orders.*/
+/**Class Broker is created which acts as an invoker object. It can take and place orders.*/
 public class Broker {
 
 	private List<Order> orderList = new ArrayList<>(); 

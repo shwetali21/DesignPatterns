@@ -3,14 +3,15 @@ package com.java.designpattern.behavioral.mediator;
 import java.util.ArrayList;
 import java.util.List;
 
-/*Create concrete mediator class.
- * It will have a list of users in the group and provide logic for the communication between the users.*/
+/**Concrete mediator class.
+ * It will have a list of users in the group and provide logic for the communication between the users.
+ * */
 public class ChatMediatorImpl implements ChatMediator {
 
 	private List<User> users;
 
 	public ChatMediatorImpl() {
-		this.users=new ArrayList<>();
+		this.users = new ArrayList<>();
 	}
 
 	@Override

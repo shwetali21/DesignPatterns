@@ -3,6 +3,10 @@ package com.java.designpattern.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**Composite object:
+ * A composite object contains group of leaf objects and we should provide some helper methods to add or delete leafs from the group.
+ * We can also provide a method to remove all the elements from the group
+ */
 public class Drawing implements Shape {
 
 	//collection of Shapes
@@ -29,3 +33,4 @@ public class Drawing implements Shape {
 		this.shapes.clear();
 	}
 }
+/**Composite also implements component and behaves similar to leaf except that it can contain group of leaf elements.*/

@@ -1,11 +1,11 @@
 package com.java.designpattern.creational.builder;
 
 public class BankAccount {
-	
+
 	//required params.
 	private String name;
 	private String accountNumber;
-	
+
 	//optionals params
 	private String email;
 	private boolean newsletter;
@@ -20,11 +20,11 @@ public class BankAccount {
 
 	//the builder inner class
 	public static class BankAccountBuilder {
-		
+
 		//required params.
 		private String name;
 		private String accountNumber;
-		
+
 		//optionals params
 		private String email;
 		private boolean newsletter;

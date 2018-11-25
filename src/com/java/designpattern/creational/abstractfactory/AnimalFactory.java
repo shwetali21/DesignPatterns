@@ -15,7 +15,7 @@ public class AnimalFactory implements AbstractFactory {
 
 	@Override
 	public Color getColor(String color) {
-		throw new UnsupportedOperationException();
+		return null;
 	}
 
 }

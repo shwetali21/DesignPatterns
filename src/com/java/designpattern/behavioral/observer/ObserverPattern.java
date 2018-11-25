@@ -1,8 +1,10 @@
 package com.java.designpattern.behavioral.observer;
 
+/**Program to consume our topic implementation*/
 public class ObserverPattern {
-	
+
 	public static void main(String[] args) {
+
 		//create subject
 		MyTopic topic = new MyTopic();
 

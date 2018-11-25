@@ -1,7 +1,8 @@
 package com.java.designpattern.behavioral.strategy;
 
+/**Program to implement StrategyPattern.*/
 public class StrategyPattern {
-	
+
 	public static void main(String[] args) {
 		ShoppingCart cart = new ShoppingCart();
 
@@ -15,6 +16,6 @@ public class StrategyPattern {
 		cart.pay(new PayPalStrategy("myemail@example.com", "mypwd"));
 
 		//pay by credit card
-		cart.pay(new CreditCardStrategy("Pankaj Kumar", "1234567890123456", "786", "12/15"));
+		cart.pay(new CreditCardStrategy("New Customer", "1234567890123456", "786", "12/15"));
 	}
 }

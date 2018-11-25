@@ -1,6 +1,9 @@
 package com.java.designpattern.structural.proxy;
 
+/**Utilize the Proxy pattern and initialize our object on demand.
+ * */
 public class ExpensiveObjectProxy implements ExpensiveObject {
+
 	private static ExpensiveObject object;
 
 	@Override
@@ -11,3 +14,7 @@ public class ExpensiveObjectProxy implements ExpensiveObject {
 		object.process();
 	}
 }
+
+/**Whenever our client calls the process() method, they’ll just get to see the processing 
+ * and the initial configuration will always remain hidden
+ */

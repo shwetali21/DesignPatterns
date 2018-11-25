@@ -2,6 +2,9 @@ package com.java.designpattern.creational.singleton;
 
 import java.io.Serializable;
 
+/**Serializable interface in Singleton class 
+ * so that we can store its state in file system and retrieve it at later point of time.
+ * */
 public class SerializedSingleton implements Serializable {
 
 	private static final long serialVersionUID = 707713214475084978L;
@@ -37,7 +40,7 @@ public class SerializedSingleton implements Serializable {
 		System.out.println("instanceTwo hashCode="+instanceTwo.hashCode());
 
 	}
-	
+
 	protected Object readResolve() {
 		return getInstance();
 	}

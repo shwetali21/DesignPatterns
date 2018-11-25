@@ -1,7 +1,9 @@
 package com.java.designpattern.structural.adapter;
 
-//Using inheritance for adapter pattern
-public class SocketClassAdapterImpl extends Socket implements SocketAdapter{
+/**Using inheritance for adapter pattern
+ * Class Adapter – This form uses java inheritance and extends the source interface, in our case Socket class.
+ */
+public class SocketClassAdapterImpl extends Socket implements SocketAdapter {
 
 	@Override
 	public Volt get120Volt() {

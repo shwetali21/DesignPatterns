@@ -1,5 +1,7 @@
 package com.java.designpattern.structural.adapter;
 
+/**Object Adapter – This form uses java composition and adapter contains the source object.
+ * */
 public class SocketObjectAdapterImpl implements SocketAdapter {
 
 	//Using Composition for adapter pattern

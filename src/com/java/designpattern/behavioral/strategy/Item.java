@@ -1,5 +1,6 @@
 package com.java.designpattern.behavioral.strategy;
 
+/**Class for which payment has to be processed.*/
 public class Item {
 
 	private String upcCode;

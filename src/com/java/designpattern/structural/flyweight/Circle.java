@@ -1,5 +1,7 @@
 package com.java.designpattern.structural.flyweight;
 
+/**concrete class implementing the Shape interface.
+ */
 public class Circle implements Shape {
 
 	private String color;
@@ -7,7 +9,7 @@ public class Circle implements Shape {
 	private int y;
 	private int radius;
 
-	public Circle(String color){
+	public Circle(String color) {
 		this.color = color;		
 	}
 

@@ -3,6 +3,7 @@ package com.java.designpattern.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**concrete implementation for Subject*/
 public class MyTopic implements Subject {
 
 	private List<Observer> observers;
@@ -42,14 +43,16 @@ public class MyTopic implements Subject {
 			observersLocal = new ArrayList<>(this.observers);
 			this.changed = false;
 		}
-		observersLocal.forEach(obj -> obj.update());
+		observersLocal.forEach(Observer::update);
 	}
 
+	
 	@Override
 	public Object getUpdate(Observer obj) {
 		return this.message;
 	}
 
+	
 	//method to post message to the topic
 	public void postMessage(String msg){
 		System.out.println("Message Posted to Topic: " + msg);

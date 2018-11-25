@@ -1,5 +1,6 @@
 package com.java.designpattern.structural.proxy;
 
+/**implementation of the interface with a large initial configuration.*/
 public class ExpensiveObjectImpl implements ExpensiveObject {
 
 	public ExpensiveObjectImpl() {

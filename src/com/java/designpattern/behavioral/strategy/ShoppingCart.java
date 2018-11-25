@@ -21,6 +21,7 @@ public class ShoppingCart {
 		this.items.remove(item);
 	}
 
+	//calculate total for all the items.
 	public int calculateTotal() {
 		int sum = 0;
 

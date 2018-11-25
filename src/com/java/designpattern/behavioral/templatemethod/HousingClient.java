@@ -1,5 +1,6 @@
 package com.java.designpattern.behavioral.templatemethod;
 
+/**Template Method Design Pattern Client*/
 public class HousingClient {
 
 	public static void main(String[] args) {

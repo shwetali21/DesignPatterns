@@ -7,16 +7,22 @@ public class CreditCardStrategy implements PaymentStrategy {
 	private String cardNumber;
 	private String cvv;
 	private String dateOfExpiry;
-	
+
 	public CreditCardStrategy(String nme, String ccNum, String cvv, String expiryDate) {
 		this.name = nme;
 		this.cardNumber = ccNum;
 		this.cvv = cvv;
 		this.dateOfExpiry = expiryDate;
 	}
-	
+
 	@Override
 	public void pay(int amount) {
 		System.out.println(amount +" paid with Credit/Debit card.");
+	}
+
+	@Override
+	public String toString() {
+		return "CreditCardStrategy [name=" + name + ", cardNumber=" + cardNumber + ", cvv=" + cvv + ", dateOfExpiry="
+				+ dateOfExpiry + "]";
 	}
 }

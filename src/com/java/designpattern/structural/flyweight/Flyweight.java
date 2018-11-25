@@ -2,9 +2,11 @@ package com.java.designpattern.structural.flyweight;
 
 import java.util.Random;
 
-public class TestFlyweight {
-	
+/**Factory to get object of concrete class by passing an information such as color.*/
+public class Flyweight {
+
 	private static final String[] colors = { "Red", "Green", "Blue", "White", "Black" };
+
 	public static void main(String[] args) {
 
 		for(int i = 0; i < 5; ++i) {
@@ -15,15 +17,15 @@ public class TestFlyweight {
 			circle.draw();
 		}
 	}
-	
+
 	private static String getRandomColor() {
 		return colors[(int)(Math.random()*colors.length)];
 	}
-	
+
 	private static int getRandomX() {
 		return new Random().nextInt();
 	}
-	
+
 	private static int getRandomY() {
 		return new Random().nextInt();
 	}

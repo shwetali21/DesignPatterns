@@ -1,6 +1,8 @@
 package com.java.designpattern.behavioral.mediator;
 
+/**Mediator Pattern Colleague Interface*/
 public abstract class User {
+
 	protected ChatMediator mediator;
 	protected String name;
 

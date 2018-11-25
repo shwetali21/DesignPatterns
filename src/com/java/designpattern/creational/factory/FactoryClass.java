@@ -1,5 +1,6 @@
 package com.java.designpattern.creational.factory;
 
+/**Factory to generate object of concrete class based on given information*/
 public class FactoryClass {
 
 	public static Computer getComputer(String c, int ram, int hdd, double dd) {

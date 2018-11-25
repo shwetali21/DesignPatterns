@@ -1,6 +1,6 @@
 package com.java.designpattern.creational.builder;
 
-public class Computer{
+public class Computer {
 
 	//required params.
 	private String ram;
@@ -11,7 +11,7 @@ public class Computer{
 	private boolean isBluetoothEnabled;
 
 	// Note the private visibility of the constructor, and the builder variable type.
-	private Computer(ComputerBuilder builder){
+	private Computer(ComputerBuilder builder) {
 		this.ram = builder.ram;
 		this.hdd = builder.hdd;
 
@@ -32,43 +32,42 @@ public class Computer{
 		private boolean isBluetoothEnabled;
 
 
-		public ComputerBuilder(String hdd, String ram){
+		public ComputerBuilder(String hdd, String ram) {
 			this.ram = ram;
 			this.hdd = hdd;
 		}
 
-		public ComputerBuilder setGraphicsCardEnabled(boolean val){
+		public ComputerBuilder setGraphicsCardEnabled(boolean val) {
 			this.isGraphicsCardEnable = val;
 			return this;
 		}
 
-		public ComputerBuilder setBluetoothEnabled(boolean val){
+		public ComputerBuilder setBluetoothEnabled(boolean val) {
 			this.isBluetoothEnabled = val;
 
 			return this;
 		}
 
 		// The build function.
-		public Computer build(){
+		public Computer build() {
 			return new Computer(this);
 		}
 	}
 
-	public String getRam(){
+	public String getRam() {
 		return this.ram;
 	}
 
-	public String getHdd(){
+	public String getHdd() {
 		return this.hdd;
 	}
 
 
-	public boolean isGraphicsCardEnable(){
+	public boolean isGraphicsCardEnable() {
 		return isGraphicsCardEnable;
 	}
 
-	public boolean isBluetoothEnabled(){
+	public boolean isBluetoothEnabled() {
 		return isBluetoothEnabled;
 	}
-
 }
